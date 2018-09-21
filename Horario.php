@@ -10,7 +10,7 @@
         "Seguridad",  //4
         "Servicios red e internet",  //5
         "Ingles");  //6
-
+    echo var_dump($dia, $hora, $minuto);
 
     if ($dia == "Monday") {
         if ($hora < 8) {
