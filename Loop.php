@@ -4,8 +4,8 @@
     echo $a." --> a <br>";
 }*/
 
-$a = 1
+$a = 1;
 while  ($a < 100) {
-    echo $a." --> a <br>";
     $a++;
+    echo $a." --> a <br>";   
 }
