@@ -4,7 +4,7 @@
     echo $a." --> a <br>";
 }*/
 
-$a = 1;
+$a = 0;
 while  ($a < 100) {
     $a++;
     echo $a." --> a <br>";   
