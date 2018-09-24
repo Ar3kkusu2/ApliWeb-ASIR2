@@ -2,7 +2,7 @@
 
 $cars = array("Volvo","BMW","Toyota");
 
-for ($x = 0; $x < $cars.lenght; $++) {
+for ($x = 0; $x < count($cars); $++) {
     echo $cars[$x]."<br>";
 }
 
