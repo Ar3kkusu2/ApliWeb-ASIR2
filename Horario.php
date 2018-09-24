@@ -1,3 +1,16 @@
+<html>
+    <head>
+        <title>Horario</title>
+    </head>
+    <body>
+        <!--<table>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+
+        -->
+    </body>
+</html>
 <?php
     $dia = date("l");
     $hora = date("H");
@@ -10,7 +23,7 @@
         "Seguridad",  //4
         "Servicios red e internet",  //5
         "Ingles");  //6
-    //echo var_dump($dia, $hora, $minuto);
+        //echo var_dump($dia, $hora, $minuto);
 
     if ($dia == "Monday") {
         if ($hora < 8) {
