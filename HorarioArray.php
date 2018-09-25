@@ -22,8 +22,8 @@ $horario = array(
     array($asig[4],$asig[4],$asig[5],$asig[5],$asig[6],$asig[6]); //Viernes --> 4
 )
 
-if($dia == 6 || $dia == 7 || $hora < 8 || $hora > 14) {
+/*if($dia == 6 || $dia == 7 || $hora < 8 || $hora > 14) {
     echo "Fiesta";
-}
+}*/
 
 echo = $horario[$dia-1][$hora-8];
