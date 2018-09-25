@@ -26,7 +26,7 @@
         //echo var_dump($dia, $hora, $minuto);
 
     if ($dia == "Monday") {
-        if ($hora < 8) {
+        if ($hora < 8) { 
             echo "No tienes clase";
         }
         elseif ($hora < 9 && $minuto < 55) {
