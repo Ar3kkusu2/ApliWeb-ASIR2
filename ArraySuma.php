@@ -15,6 +15,6 @@ for($x = 0;$x < count($a);$x++){
 }*/
 
 foreach( $a as $x){
-    $s = $s + $x;
+    $s+= $x;
 }
 echo $s;
