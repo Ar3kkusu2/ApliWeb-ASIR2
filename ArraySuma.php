@@ -14,7 +14,7 @@ for($x = 0;$x < count($a);$x++){
     }
 }*/
 
-foreach( $a as $x){
+foreach( $a as $i => $x){
     $s+= $x;
 }
 echo $s;
