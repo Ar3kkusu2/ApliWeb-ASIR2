@@ -13,4 +13,4 @@ for($x = 0;$x < count($a);$x++){
         $s = $s + $a[$x][$y];
     }
 }
-echo $s
+echo $s;
