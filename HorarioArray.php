@@ -11,7 +11,7 @@ $horario = array(
     array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
 );
 
-if($dia == 6 || $dia == 7) {
+if($dia == 6 || $dia == 7 || $hora < 8 || $hora > 14) {
     echo "Fiesta";
 }
 
