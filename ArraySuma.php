@@ -6,7 +6,7 @@ $a = array(
     array(9,10,11,12)
 );
 
-$s == 0;
+$s = 0;
 /*
 for($x = 0;$x < count($a);$x++){
     for($y = 0;$y < count($a[$x]);$y++) {
@@ -14,7 +14,7 @@ for($x = 0;$x < count($a);$x++){
     }
 }*/
 
-foreach( $a as $x){
-    $s+= $x;
+foreach($a as $x){
+    $s += $x;
 }
 echo $s;
