@@ -12,9 +12,12 @@ for($x = 0;$x < count($a);$x++){
     for($y = 0;$y < count($a[$x]);$y++) {
         $s = $s + $a[$x][$y];
     }
-}*/
+}  
+*/
 
 foreach($a as $x){
-    $s += $x;
+    foreach($x as $y){
+    $s += $y;
+    }
 }
-echo $s;
+echo $s; // 76
