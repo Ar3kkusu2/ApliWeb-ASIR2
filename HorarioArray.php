@@ -9,7 +9,7 @@ $horario = array(
     array("Seguridad","Seguridad","Sistemas","Sistemas","EIE","EIE"), //Miercoles
     array("Redes","Redes","Sistemas","Sistemas","Aplicaciones","Aplicaciones"), //Jueves
     array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
-)
+);
 
 if($dia == 6 || $dia == 7) {
     echo "Fiesta";
