@@ -7,17 +7,18 @@ $a = array(
 );
 
 $s = 0;
-/*
+
 for($x = 0;$x < count($a);$x++){
     for($y = 0;$y < count($a[$x]);$y++) {
         $s = $s + $a[$x][$y];
     }
 }  
-*/
 
-foreach($a as $x){
+
+/*foreach($a as $x){
     foreach($x as $y){
     $s += $y;
     }
 }
+*/
 echo $s; // 76
