@@ -20,4 +20,5 @@ for($x = 0;$x < count($horario);$x++){
     }
     echo "</tr>";
 }  
-echo "</table></center>";
+echo "</table></center><br>";
+echo $horario[$dia-1][$hora-8];
