@@ -1,6 +1,6 @@
 <?php
-$dia = date("l");
-$hora = date("H");
+$dia = date("N");
+$hora = date("G");
 $horario = array(
     array("Bases de datos","Aplicaciones","Seguridad","Redes","Seguridad"),
     array("EIE","Seguridad","Seguridad","Redes","Seguridad"),
