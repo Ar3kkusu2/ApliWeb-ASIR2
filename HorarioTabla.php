@@ -10,6 +10,8 @@ $horario = array(
     array("Aplicaciones","Bases de datos","EIE","Aplicaciones","Ingles")
 );
 
+echo $horario[$hora-8][$dia-1];
+
 
 
 echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='1701a5'>";
@@ -20,5 +22,4 @@ for($x = 0;$x < count($horario);$x++){
     }
     echo "</tr>";
 }  
-echo "</table></center><br>";
-echo $horario[$hora-8][$dia-1];
+echo "</table></center>";
