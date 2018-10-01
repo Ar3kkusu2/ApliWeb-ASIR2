@@ -41,7 +41,7 @@ foreach($horario as $x){
         else {
             echo "<td>";
         }
-        echo $horario[$x][$y]."</td>";
+        echo $horario."</td>";
     }
     echo "</tr>";
 }  
