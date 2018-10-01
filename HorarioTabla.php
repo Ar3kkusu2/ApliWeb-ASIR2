@@ -34,7 +34,7 @@ echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 border
 
 foreach($horario as $x){
     echo "<tr>";   
-    for($x as $y) {
+    foreach($x as $y) {
         if ($x == $hora-8 && $y == $dia-1){
             echo "<td style='background-color:red'>";
         }   
