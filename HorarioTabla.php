@@ -10,7 +10,7 @@ $horario = array(
     array("Aplicaciones","Bases de datos","EIE","Aplicaciones","Ingles")
 );
 
-echo $horario[$hora-8][$dia-1];
+$ahora = $horario[$hora-8][$dia-1];
 
 
 
@@ -19,7 +19,7 @@ for($x = 0;$x < count($horario);$x++){
     echo "<tr>";
    
     for($y = 0;$y < count($horario[$x]);$y++) {
-        if ($x == $dia-1 && $y == $hora-8){
+        if ($x == $ahora){
             echo "<td style='background-color:red'>";
         }   
         else {
