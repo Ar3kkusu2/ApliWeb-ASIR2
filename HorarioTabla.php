@@ -9,9 +9,14 @@ $horario = array(
     array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
 );
 
+
+
+echo "<center><br><table>";
 for($x = 0;$x < count($horario);$x++){
+    echo "<tr>";
     for($y = 0;$y < count($horario[$x]);$y++) {
-        echo $horario[$x][$y]."<br>";
+        echo "<td>".$horario[$x][$y]."</td>";
     }
-    echo "<br>";
+    echo "</tr>";
 }  
+echo "</table></center>";
