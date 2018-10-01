@@ -15,10 +15,26 @@ echo $horario[$hora-8][$dia-1];
 
 
 echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='1701a5'>";
-for($x = 0;$x < count($horario);$x++){
+/*for($x = 0;$x < count($horario);$x++){
     echo "<tr>";
    
     for($y = 0;$y < count($horario[$x]);$y++) {
+        if ($x == $hora-8 && $y == $dia-1){
+            echo "<td style='background-color:red'>";
+        }   
+        else {
+            echo "<td>";
+        }
+        echo $horario[$x][$y]."</td>";
+    }
+    echo "</tr>";
+}  */
+
+
+
+foreach($horario as $x){
+    echo "<tr>";   
+    for($x as $y) {
         if ($x == $hora-8 && $y == $dia-1){
             echo "<td style='background-color:red'>";
         }   
