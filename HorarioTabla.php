@@ -2,16 +2,17 @@
 $dia = date("l");
 $hora = date("H");
 $horario = array(
-    array("Bases de datos","EIE","Sistemas","Sistemas","Aplicaciones","Aplicaciones"), //Lunes --> 0
-    array("Aplicaciones","Seguridad","Redes","Redes","Bases de datos","Bases de datos"), //Martes
-    array("Seguridad","Seguridad","Sistemas","Sistemas","EIE","EIE"), //Miercoles
-    array("Redes","Redes","Sistemas","Sistemas","Aplicaciones","Aplicaciones"), //Jueves
-    array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
+    array("Bases de datos","Aplicaciones","Seguridad","Redes","Seguridad"),
+    array("EIE","Seguridad","Seguridad","Redes","Seguridad"),
+    array("Sistemas","Redes","Sistemas","Sistemas","Redes"),
+    array("Sistemas","Redes","Sistemas","Sistemas","Redes"),
+    array("Aplicaciones","Bases de datos","EIE","Aplicaciones","Ingles"),
+    array("Aplicaciones","Bases de datos","EIE","Aplicaciones","Ingles")
 );
 
 
 
-echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='00ff48'>";
+echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='1701a5'>";
 for($x = 0;$x < count($horario);$x++){
     echo "<tr>";
     for($y = 0;$y < count($horario[$x]);$y++) {
