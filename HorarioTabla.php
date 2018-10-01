@@ -16,14 +16,16 @@ echo $horario[$hora-8][$dia-1];
 
 echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='1701a5'>";
 for($x = 0;$x < count($horario);$x++){
-    if ($x == $horario[$hora-8][$dia-1]){
-        echo "<tr background-color=red>";
-    }   
-    else {
-        echo "<tr>";
-    }
+    echo "<tr>";
+   
     for($y = 0;$y < count($horario[$x]);$y++) {
-        echo "<td>".$horario[$x][$y]."</td>";
+        if ($x == $dia-1 && $y == $hora-8){
+            echo "<td background-color=red>";
+        }   
+        else {
+            echo "<td>";
+        }
+        echo $horario[$x][$y]."</td>";
     }
     echo "</tr>";
 }  
