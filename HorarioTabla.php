@@ -1,5 +1,6 @@
 <?php
-
+$dia = date("l");
+$hora = date("H");
 $horario = array(
     array("Bases de datos","EIE","Sistemas","Sistemas","Aplicaciones","Aplicaciones"), //Lunes --> 0
     array("Aplicaciones","Seguridad","Redes","Redes","Bases de datos","Bases de datos"), //Martes
@@ -8,9 +9,9 @@ $horario = array(
     array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
 );
 
-foreach($horario as $x){
-    foreach($x as $y){
-    echo $y."<br>";
+for($x = 0;$x < count($horario);$x++){
+    for($y = 0;$y < count($horario[$x]);$y++) {
+        echo $horario[$x][$y]."<br>";
     }
-    echo "<br>";
-}
+    echo "<br>"
+}  
