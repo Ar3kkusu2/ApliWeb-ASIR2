@@ -10,6 +10,7 @@ $horario = array(
 
 foreach($horario as $x){
     foreach($x as $y){
-    echo $y."<br>";
+    echo $y."          ";
     }
+    echo "<br>";
 }
