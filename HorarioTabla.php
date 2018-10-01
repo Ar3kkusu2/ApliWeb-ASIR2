@@ -13,5 +13,5 @@ for($x = 0;$x < count($horario);$x++){
     for($y = 0;$y < count($horario[$x]);$y++) {
         echo $horario[$x][$y]."<br>";
     }
-    echo "<br>"
+    echo "<br>";
 }  
