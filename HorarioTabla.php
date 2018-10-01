@@ -11,7 +11,7 @@ $horario = array(
 
 
 
-echo "<center>HORARIO<br><br><table border='5px solid black'>";
+echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 bordercolor='00ff48'>";
 for($x = 0;$x < count($horario);$x++){
     echo "<tr>";
     for($y = 0;$y < count($horario[$x]);$y++) {
