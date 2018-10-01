@@ -20,7 +20,7 @@ for($x = 0;$x < count($horario);$x++){
    
     for($y = 0;$y < count($horario[$x]);$y++) {
         if ($x == $dia-1 && $y == $hora-8){
-            echo "<td background-color=red>";
+            echo "<td bgcolor=red>";
         }   
         else {
             echo "<td>";
