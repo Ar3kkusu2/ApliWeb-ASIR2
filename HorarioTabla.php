@@ -19,7 +19,7 @@ for($x = 0;$x < count($horario);$x++){
     echo "<tr>";
    
     for($y = 0;$y < count($horario[$x]);$y++) {
-        if ($x == $ahora){
+        if ($x == $ahora && $y == $ahora){
             echo "<td style='background-color:red'>";
         }   
         else {
