@@ -1,4 +1,4 @@
-
+<?php
 
 $horario = array(
     array("Bases de datos","EIE","Sistemas","Sistemas","Aplicaciones","Aplicaciones"), //Lunes --> 0
@@ -8,4 +8,8 @@ $horario = array(
     array("Seguridad","Seguridad","Redes","Redes","Ingles","Ingles") //Viernes --> 4
 );
 
-foreach()
+foreach($horario as $x){
+    foreach($x as $y){
+    echo $horario[$x][$y];
+    }
+}
