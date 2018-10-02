@@ -33,6 +33,7 @@ echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 border
 
 
 foreach($horario as $x){
+    echo $x;
     echo "<tr>";   
     foreach($x as $y) {
         if ($y == $horario[$hora-8][$dia-1]){
