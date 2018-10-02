@@ -1,6 +1,6 @@
 <?php
-$dia = date("N");
-$hora = date("G");
+$dia_now = date("N");
+$hora_now = date("G");
 $horario = array(
     array("Bases de datos","Aplicaciones","Seguridad","Redes","Seguridad"),
     array("EIE","Seguridad","Seguridad","Redes","Seguridad"),
@@ -35,7 +35,7 @@ echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 border
 foreach($horario as $x => $hora){
     echo "<tr>";   
     foreach($x as $y => $dia) {
-        if ($x == $hora && $y ==$dia){
+        if ($x == $hora_now && $y ==$dia_now){
             echo "<td style='background-color:red'>";
         }   
         else {
