@@ -19,7 +19,7 @@ echo "<center>HORARIO<br><br><table border=1 cellspacing=0 cellspadding=2 border
     echo "<tr>";
    
     for($y = 0;$y < count($horario[$x]);$y++) {
-        if ($x == $hora-8 && $y == $dia-1){
+        if ($x == $hora_now-8 && $y == $dia_now-1){
             echo "<td style='background-color:red'>";
         }   
         else {
