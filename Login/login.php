@@ -4,7 +4,7 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 
 
-$mysqli = new mysqli("localhost", "root", "", "apliweb");
+$mysqli = new mysqli("localhost", "root", " ", "apliweb");
 
 
 
