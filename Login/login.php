@@ -13,4 +13,4 @@ $q = mysql_query("SELECT Password FROM users WHERE User='$user'");
 if ($q == $pass) {
     echo 'Estas dentro';
 }else
-    echo 'No no no no has dicho la palabra magica'
+    echo 'No no no no has dicho la palabra magica';
