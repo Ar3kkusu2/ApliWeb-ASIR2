@@ -1,13 +1,13 @@
 <?php
 
-$user = $_POST['user'];
-$pass = $_POST['pass'];
+$username = $_POST['user'];
+$password = $_POST['pass'];
 
 
-$mysqli = new mysqli("localhost:3307", "root", " ", "apliweb");
+$conn = new mysqli("localhost:3307", "root", " ", "apliweb");
 
 
-if (!$mysqli) {
+if (!$conn) {
      die("Conexion Fallida: ".mysqli_connect_error());
 }
 echo "Conexion Exitosa";
