@@ -4,13 +4,10 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 
 
-$mysqli = new mysqli("localhost", "root", " ", "apliweb");
+$mysqli = new mysqli("localhost:3307", "root", " ", "apliweb");
 
 
-
-$q = mysql_query("SELECT Password FROM users WHERE User='$user'");
-
-if ($q == $pass) {
-    echo 'Estas dentro';
-}else
-    echo 'No no no no has dicho la palabra magica';
+if (!$mysqli) {
+     die("Conexion Fallida: ".mysqli_connect_error());
+}
+echo "Conexion Exitosa";
