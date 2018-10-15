@@ -17,11 +17,11 @@ $query = "SELECT User from users WHERE User='$user' AND Password='$pass'";
 $result = mysqli_query($conn, $query);
 
 if ($result) {
-    $row = mysqli_fetch_array($result, MYSQLI_NUM);
-    echo $row[0]." ";
+    $line = mysqli_fetch_array($result, MYSQLI_NUM);
+    echo $line[0]." ";
 }
 
-if ($row) {
+if ($line) {
     echo "Accesso Concendido";
 }else {
     echo "Accesso Denegado";
