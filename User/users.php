@@ -11,9 +11,20 @@ if (!$conn) {
 
 $query = "SELECT User from users";
 $result = mysqli_query($conn, $query);
-echo "<table border='5px solid black'><tr><th colspan=3>Name:</th></tr>";
+
 while($line = mysqli_fetch_array($result)){
-    echo "<tr><td>".$line[0]."</td>";
-    echo "<td><input type='button' name='Delete' value='Delete'></td><td><input type='button' name='Modify' value='Modify'></td>";
+    //echo $line[0].":<br>";
+
+?>
+    <?php echo $line[0] ?>:
+    <form action="delete.php" method="POST">
+      <input type='hidden' name='user' value="<?php echo $line[0] ?>">
+      <input type='submit'  value='Delete'>
+    </form>
+    <form action="modify.php" method="POST">
+      <input type='hidden' name='user' value="<?php echo $line[0] ?>">
+      <input type='submit'  value='Modify'>
+    </form><br>
+
+<?php
 }
-echo "</table>";
