@@ -11,7 +11,9 @@ if (!$conn) {
 
 $query = "SELECT User from users";
 $result = mysqli_query($conn, $query);
-
+echo "<table border='5px solid black'><tr><th colspan=3>Name:</th></tr>";
 while($line = mysqli_fetch_array($result)){
-    echo $line[0]."<input type='button' name='Delete' value='Delete'>  <input type='button' name='Modify' value='Modify'><br>";
+    echo "<tr><td>".$line[0]."</td>";
+    echo "<td><input type='button' name='Delete' value='Delete'></td><td><input type='button' name='Modify' value='Modify'></td>";
 }
+echo "</table>";
