@@ -22,9 +22,9 @@ while($line = mysqli_fetch_array($result)){
       <input type='hidden' name='user' value="<?php echo $line[0] ?>">
       <input type='submit'  value='Delete'>
     </form></td>
-    <td><form action="modify.php" method="POST">
+    <td><form action="update.php" method="POST">
       <input type='hidden' name='user' value="<?php echo $line[0] ?>">
-      <input type='submit'  value='Modify'>
+      <input type='submit'  value='Update'>
     </form></td></tr>
 
 <?php
