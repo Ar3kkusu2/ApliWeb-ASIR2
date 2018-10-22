@@ -9,7 +9,7 @@ User: <?php echo $user?>
 <input type='hidden' name='user' value="<?php $user ?>"><br>
 Password:       
 <input type='password' name='pass'><br>
-      <input type='submit'  value='Update'>
+<input type='submit'  value='Update'>
 </form>
 
 

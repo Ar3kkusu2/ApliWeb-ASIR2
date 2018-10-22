@@ -9,7 +9,9 @@ if (!$conn) {
 $user = $_POST["user"];
 $pass = $_POST["pass"];
 
-$query = "update users set Password = $pass where User = $user";
+echo $user."<br>".$pass;
+
+$query = "update users set Password = '$pass' where User = '$user'";
 $result = mysqli_query($conn, $query);
 
-header('Location: '."users.php");
+//header('Location: '."users.php");
